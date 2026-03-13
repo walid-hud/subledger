@@ -12,11 +12,12 @@ users and admins are authenticated using JWT tokens. Admins can manage users whi
 2. Install dependencies using `pnpm install or npm install`
 3. Create a `.env` file in the root directory and add the following environment variables:
 ```.env
-MONGO_URI=your_mongodb_uri
+MONGODB_URI=your_mongodb_uri
 MONGO_DB_NAME=your_database_name
 JWT_SECRET=your_jwt_secret
 JWT_EXPIRES_IN=your_jwt_expiration_time (default is 1h)
 PORT=your_port_number
 ```
+note: env variables are validated during runtime (server won't start unless everything is there)
 4. Start the server using `pnpm dev or npm run dev`
 
